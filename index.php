@@ -19,12 +19,34 @@
     }
 
     header {
-        display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
-        background-color: yellow;
         padding: 10px;
+        border-bottom: 1px solid grey;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+    }
+
+    .privacy {
+        color: #5f6368;
+        font-size: 25px;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    li {
+        display: inline;
+        margin-right: 20px; 
+    }
+
+    li a {
+        color: #5f6368;
+        text-decoration: none;
+        font-size: 20px;
     }
 
     .container {
@@ -86,7 +108,31 @@
 ?>
 
 <header>
-    <h1>Replica Google Faq</h1>
+    <div class="title">
+        <h2>Google</h2>
+        <span class="privacy">Privacy e termini</span>
+    </div>
+    <div class="navbar">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Introduzione</a>
+                </li>
+                <li>
+                    <a href="#">Norme sulla Privacy</a>
+                </li>
+                <li>
+                    <a href="#">Termini di servizio</a>
+                </li>
+                <li>
+                    <a href="#">Tecnologie</a>
+                </li>
+                <li>
+                    <a href="#">Domande frequenti</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <main>
