@@ -60,6 +60,8 @@
 </style>
 
 <?php
+    $pageTitle = "Google";
+    $subTitlePage = "Privacy e termini";
     $googleFaqs = [
         [
             "title" => "Come state implementando la recente decisione della Corte di giustizia dell'Unione europea (CGUE) relativa al diritto all'oblio?",
@@ -109,8 +111,8 @@
 
 <header>
     <div class="title">
-        <h2>Google</h2>
-        <span class="privacy">Privacy e termini</span>
+        <h2><?php echo $pageTitle; ?></h2>
+        <span class="privacy"><?php echo $subTitlePage; ?></span>
     </div>
     <div class="navbar">
         <nav>
